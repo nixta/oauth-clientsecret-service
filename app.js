@@ -98,7 +98,7 @@ app.post('/oauth', bodyParser.json(), function onRequest(request, response) {
               response.status(501).send(auth.error.code + ' : ' + auth.error.error_description);
             } else {
               tokenInfo.token = auth.access_token;
-              var expires_in = auth.expires_in; // minutes
+              var expires_in = auth.expires_in; // seconds
               var expirationMS = (new Date()).getTime() + (expires_in * 1000);
               tokenInfo.expirationUTC = expirationMS;
 
