@@ -71,7 +71,7 @@ app.post('/oauth', bodyParser.json(), function onRequest(request, response) {
           'client_id': clientID,
           'client_secret': clientDetails.appSecret,
           'grant_type': 'client_credentials',
-          'expiration': 15 * 24 * 60
+          'expiration': 14 * 24 * 60
         });
 
         var options = {
