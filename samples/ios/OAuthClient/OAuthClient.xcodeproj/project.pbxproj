@@ -176,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DSEU;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Esri;
 			};
 			buildConfigurationList = E169807016387B6C00A1F2E5 /* Build configuration list for PBXProject "OAuthClient" */;

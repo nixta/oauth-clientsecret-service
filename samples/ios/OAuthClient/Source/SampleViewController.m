@@ -60,7 +60,9 @@
             if (!error)
             {
                 NSString *token = tokenInfo[@"token"];
-                NSLog(@"Got a token! %@", token);
+                NSNumber *tokenExpirationNum = tokenInfo[@"expirationUTC"];
+                NSDate *tokenExpiration = [NSDate dateWithTimeIntervalSince1970:[tokenExpirationNum doubleValue]/1000];
+                NSLog(@"Got a token that expires at %@: %@", [tokenExpiration descriptionWithLocale:[NSLocale currentLocale]], token);
                 AGSCredential *cred = [[AGSCredential alloc] initWithToken:token];
 
                 // This service is not shared publicly and relies on the negotiated token.

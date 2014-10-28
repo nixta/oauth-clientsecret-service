@@ -1,8 +1,11 @@
 {
-    "name":"oauth",
-    "version":"0.0.1",
-    "dependencies":{
-        "express":"3.x"
-    },
-  	"engine": "node >= 0.8.0"
+  "name": "oauth",
+  "version": "0.0.1",
+  "description": "REST service to generate AGOL Token given a Client ID and authentication key",
+  "main": "app.js",
+  "repository": "https://github.com/nixta/oauth-clientsecret-service.git",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.0"
+  }
 }
